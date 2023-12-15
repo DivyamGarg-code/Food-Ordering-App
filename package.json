@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DivyamGarg-code/React_Projects.git"
+    "url": "git+https://github.com/DivyamGarg-code/Food-Ordering-App.git"
   },
   "keywords": [
     "food",
@@ -23,9 +23,9 @@
   "author": "Divyam Garg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DivyamGarg-code/React_Projects/issues"
+    "url": "https://github.com/DivyamGarg-code/Food-Ordering-App/issues"
   },
-  "homepage": "https://github.com/DivyamGarg-code/React_Projects#readme",
+  "homepage": "https://github.com/DivyamGarg-code/Food-Ordering-App",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "parcel": "^2.9.3",
