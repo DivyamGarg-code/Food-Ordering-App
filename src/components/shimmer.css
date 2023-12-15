@@ -1,0 +1,56 @@
+/* Shimmer Effect */
+
+/* =================================================================== */
+.shimming-effect {
+    background: linear-gradient(90deg, #f3f3f3 25%, #ececec 50%, #f3f3f3 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Create the shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+/* =========================================================================== */
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.shimmer-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+.shimmer-card .img{
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+.shimmer-card .text1{
+    height: 20px;
+    width: 80%;
+}
+.shimmer-card .text2{
+    height: 20px;
+    width: 60%;
+}
+/* ------------------------------------ */
