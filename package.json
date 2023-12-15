@@ -2,11 +2,12 @@
   "name": "foodorderingapp",
   "version": "1.0.0",
   "description": "Food Ordering Application for ordering food from different restaurants",
-  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "@testing-library/react": "^14.1.0",
     "@types/react": "^18.2.34",
     "babel-jest": "^29.7.0",
+    "gh-pages": "^6.1.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.4.31",
