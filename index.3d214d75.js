@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"bgABq":[function(require,module,exports) {
+})({"3smKr":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "7fb4cd117271efb6";
+module.bundle.HMR_BUNDLE_ID = "0a8ecb283d214d75";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -2935,11 +2935,11 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"2kQhy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"bB7Pu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e4e3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f00f.prelude(module);
+$parcel$ReactRefreshHelpers$e4e3.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -2948,178 +2948,24 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _app = require("./src/App");
 var _reactRouterDom = require("react-router-dom");
-var _header = require("./components/Header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-var _body = require("./components/Body");
-var _bodyDefault = parcelHelpers.interopDefault(_body);
-var _about = require("./components/About");
-var _aboutDefault = parcelHelpers.interopDefault(_about);
-var _contact = require("./components/Contact");
-var _contactDefault = parcelHelpers.interopDefault(_contact);
-var _error = require("./components/Error");
-var _errorDefault = parcelHelpers.interopDefault(_error);
-var _resInfo = require("./components/ResInfo");
-var _resInfoDefault = parcelHelpers.interopDefault(_resInfo);
-var _userContext = require("./utils/UserContext");
-var _userContextDefault = parcelHelpers.interopDefault(_userContext);
-var _reactRedux = require("react-redux");
-var _appStore = require("./utils/appStore");
-var _appStoreDefault = parcelHelpers.interopDefault(_appStore);
-var _cart = require("./components/Cart");
-var _cartDefault = parcelHelpers.interopDefault(_cart);
-var _s = $RefreshSig$();
-// This will create a routing configuration for us
-// Chunking 
-// Code Splitting
-// Dynamic Bundling
-//  lazy loading
-// on demand loading 
-// dynamic import
-// Importing this component only when it is required
-const Grocery = /*#__PURE__*/ (0, _react.lazy)(()=>require("6bf9e24f54814dcb"));
-_c = Grocery;
-const AppLayout = ()=>{
-    _s();
-    // authentication 
-    const [userName, setUserName] = (0, _react.useState)("");
-    (0, _react.useEffect)(()=>{
-        // Make an API call to get the username and password of user 
-        const data = {
-            name: "Divyam Garg"
-        };
-        setUserName(data.name);
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
-        store: (0, _appStoreDefault.default),
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
-            value: {
-                ...(0, _react.useContext)((0, _userContextDefault.default)),
-                loggedInUser: userName,
-                setUserName
-            },
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "app",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 40,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 41,
-                        columnNumber: 21
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/App.js",
-                lineNumber: 39,
-                columnNumber: 17
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 38,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/App.js",
-        lineNumber: 37,
-        columnNumber: 9
-    }, undefined);
-};
-_s(AppLayout, "58Ojy/EDlBMA6hFNQNdaNGKjtVs=");
-_c1 = AppLayout;
-// Now we are creating routing configuration inside our appRouter
-// Configuration means some information that will define what will happen on the specific route
-// Outlet is basically a component provided by react-router-dom and this outlet will be filled/replaced with the children component according to the path of the element present in that children
-const appRouter = (0, _reactRouterDom.createBrowserRouter)([
-    {
-        path: "/",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 55,
-            columnNumber: 18
-        }, undefined),
-        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 56,
-            columnNumber: 23
-        }, undefined),
-        children: [
-            {
-                path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 60,
-                    columnNumber: 26
-                }, undefined)
-            },
-            {
-                path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 64,
-                    columnNumber: 26
-                }, undefined)
-            },
-            {
-                path: "/contact",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 68,
-                    columnNumber: 26
-                }, undefined)
-            },
-            {
-                path: "/restaurants/:resId",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resInfoDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 72,
-                    columnNumber: 26
-                }, undefined)
-            },
-            {
-                path: "/cart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 76,
-                    columnNumber: 26
-                }, undefined)
-            },
-            {
-                path: "/grocery",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
-                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "Loading..."
-                    }, void 0, false, void 0, void 0),
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Grocery, {}, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 80,
-                        columnNumber: 67
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 80,
-                    columnNumber: 26
-                }, undefined)
-            }
-        ]
-    }
-]) // const root = ReactDOM.createRoot(document.getElementById("root"));
- // root.render(<AppLayout />); // Here we are rendering the app directly
- // root.render(<RouterProvider router={appRouter} />)
-;
-var _c, _c1;
-$RefreshReg$(_c, "Grocery");
-$RefreshReg$(_c1, "AppLayout");
+const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
+// root.render(<AppLayout />); // Here we are rendering the app directly
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
+    router: (0, _app.appRouter)
+}, void 0, false, {
+    fileName: "index.js",
+    lineNumber: 8,
+    columnNumber: 13
+}, undefined));
 
-  $parcel$ReactRefreshHelpers$f00f.postlude(module);
+  $parcel$ReactRefreshHelpers$e4e3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/About":"9R1Eu","./components/Contact":"cgAOG","./components/Error":"kvula","./components/ResInfo":"e5Vbc","./utils/UserContext":"c5vgB","react-redux":"bdVon","./utils/appStore":"6A5Ux","./components/Cart":"h8J3U","6bf9e24f54814dcb":"e2h3k","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./src/App":"2kQhy","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27306,7 +27152,190 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"9xmpe":[function(require,module,exports) {
+},{}],"2kQhy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f00f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "appRouter", ()=>appRouter);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _client = require("react-dom/client");
+var _clientDefault = parcelHelpers.interopDefault(_client);
+var _reactRouterDom = require("react-router-dom");
+var _header = require("./components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _body = require("./components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
+var _about = require("./components/About");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _contact = require("./components/Contact");
+var _contactDefault = parcelHelpers.interopDefault(_contact);
+var _error = require("./components/Error");
+var _errorDefault = parcelHelpers.interopDefault(_error);
+var _resInfo = require("./components/ResInfo");
+var _resInfoDefault = parcelHelpers.interopDefault(_resInfo);
+var _userContext = require("./utils/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _reactRedux = require("react-redux");
+var _appStore = require("./utils/appStore");
+var _appStoreDefault = parcelHelpers.interopDefault(_appStore);
+var _cart = require("./components/Cart");
+var _cartDefault = parcelHelpers.interopDefault(_cart);
+var _s = $RefreshSig$();
+// This will create a routing configuration for us
+// Chunking 
+// Code Splitting
+// Dynamic Bundling
+//  lazy loading
+// on demand loading 
+// dynamic import
+// Importing this component only when it is required
+const Grocery = /*#__PURE__*/ (0, _react.lazy)(()=>require("6bf9e24f54814dcb"));
+_c = Grocery;
+const AppLayout = ()=>{
+    _s();
+    // authentication 
+    const [userName, setUserName] = (0, _react.useState)("");
+    (0, _react.useEffect)(()=>{
+        // Make an API call to get the username and password of user 
+        const data = {
+            name: "Divyam Garg"
+        };
+        setUserName(data.name);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
+        store: (0, _appStoreDefault.default),
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
+            value: {
+                ...(0, _react.useContext)((0, _userContextDefault.default)),
+                loggedInUser: userName,
+                setUserName
+            },
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "app",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 40,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 41,
+                        columnNumber: 21
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.js",
+                lineNumber: 39,
+                columnNumber: 17
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 38,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/App.js",
+        lineNumber: 37,
+        columnNumber: 9
+    }, undefined);
+};
+_s(AppLayout, "58Ojy/EDlBMA6hFNQNdaNGKjtVs=");
+_c1 = AppLayout;
+const appRouter = (0, _reactRouterDom.createBrowserRouter)([
+    {
+        path: "/",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 55,
+            columnNumber: 18
+        }, undefined),
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 56,
+            columnNumber: 23
+        }, undefined),
+        children: [
+            {
+                path: "/",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 60,
+                    columnNumber: 26
+                }, undefined)
+            },
+            {
+                path: "/about",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 64,
+                    columnNumber: 26
+                }, undefined)
+            },
+            {
+                path: "/contact",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 68,
+                    columnNumber: 26
+                }, undefined)
+            },
+            {
+                path: "/restaurants/:resId",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resInfoDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 72,
+                    columnNumber: 26
+                }, undefined)
+            },
+            {
+                path: "/cart",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 76,
+                    columnNumber: 26
+                }, undefined)
+            },
+            {
+                path: "/grocery",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Loading..."
+                    }, void 0, false, void 0, void 0),
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Grocery, {}, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 80,
+                        columnNumber: 67
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 80,
+                    columnNumber: 26
+                }, undefined)
+            }
+        ]
+    }
+]) // const root = ReactDOM.createRoot(document.getElementById("root"));
+ // root.render(<AppLayout />); // Here we are rendering the app directly
+ // root.render(<RouterProvider router={appRouter} />)
+;
+var _c, _c1;
+$RefreshReg$(_c, "Grocery");
+$RefreshReg$(_c1, "AppLayout");
+
+  $parcel$ReactRefreshHelpers$f00f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/About":"9R1Eu","./components/Contact":"cgAOG","./components/Error":"kvula","./components/ResInfo":"e5Vbc","./utils/UserContext":"c5vgB","react-redux":"bdVon","./utils/appStore":"6A5Ux","./components/Cart":"h8J3U","6bf9e24f54814dcb":"kduSJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.21.0
  *
@@ -34023,12 +34052,12 @@ parcelHelpers.export(exports, "IMG_URL", ()=>IMG_URL);
 parcelHelpers.export(exports, "MENU_API_URL", ()=>MENU_API_URL);
 const LOGO_URL = require("de10c0eb15c4e254");
 const IMG_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_140,h_140,c_fill/";
-const MENU_API_URL = "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.900965&lng=75.8572758&restaurantId=";
+const MENU_API_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.900965&lng=75.8572758&restaurantId=";
 
-},{"de10c0eb15c4e254":"4Rsw0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Rsw0":[function(require,module,exports) {
-module.exports = require("1976b8dbfddd62b5").getBundleURL("aXMci") + "logo.c493797d.png" + "?" + Date.now();
+},{"de10c0eb15c4e254":"PrkKl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"PrkKl":[function(require,module,exports) {
+module.exports = require("68b586931f56c55c").getBundleURL("UckoE") + "logo.c493797d.png" + "?" + Date.now();
 
-},{"1976b8dbfddd62b5":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"68b586931f56c55c":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -36145,7 +36174,7 @@ Never call use State hook outside functional component or in the loop ,if elese 
         fetchData();
     }, []); // will work on first render after rendering the component for the first time
     const fetchData = async ()=>{
-        const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"); // This will fetch data from the 
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"); // This will fetch data from the 
         // It will return a promise and we will wait for the promise to be resolved
         const json = await data.json();
         setlistofRestaurants((0, _mockDataDefault.default).infoWithStyle.restaurants);
@@ -36436,10 +36465,10 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","../utils/UserContext":"c5vgB","bf0dfbf458bc61a5":"jFWqV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jFWqV":[function(require,module,exports) {
-module.exports = require("5f807c5f36cdc08c").getBundleURL("aXMci") + "star_rating.ec6aaf0f.png" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","../utils/UserContext":"c5vgB","bf0dfbf458bc61a5":"fGEzy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fGEzy":[function(require,module,exports) {
+module.exports = require("af6ad06502eb8981").getBundleURL("UckoE") + "star_rating.ec6aaf0f.png" + "?" + Date.now();
 
-},{"5f807c5f36cdc08c":"lgJ39"}],"iOpE9":[function(require,module,exports) {
+},{"af6ad06502eb8981":"lgJ39"}],"iOpE9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const resObj = {
@@ -43170,13 +43199,13 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"bdVon","../utils/constants":"hB8jg","./ItemList":"kZjho","../utils/cartSlice":"5RXlr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e2h3k":[function(require,module,exports) {
-module.exports = require("29af259fc1f64a1c")(require("4c1094922790cfac").getBundleURL("aXMci") + "Grocery.c52c2ad2.js" + "?" + Date.now()).catch((err)=>{
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"bdVon","../utils/constants":"hB8jg","./ItemList":"kZjho","../utils/cartSlice":"5RXlr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kduSJ":[function(require,module,exports) {
+module.exports = require("decfb8a3f25553a6")(require("cfcabb287ca830f6").getBundleURL("UckoE") + "Grocery.c52c2ad2.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
 }).then(()=>module.bundle.root("2CCQ0"));
 
-},{"29af259fc1f64a1c":"61B45","4c1094922790cfac":"lgJ39"}],"61B45":[function(require,module,exports) {
+},{"decfb8a3f25553a6":"61B45","cfcabb287ca830f6":"lgJ39"}],"61B45":[function(require,module,exports) {
 "use strict";
 var cacheLoader = require("ca2a84f7fa4a3bb0");
 module.exports = cacheLoader(function(bundle) {
@@ -43238,6 +43267,6 @@ module.exports = function(loader, type) {
     };
 };
 
-},{}]},["bgABq","1xC6H","2kQhy"], "2kQhy", "parcelRequirea907")
+},{}]},["3smKr","1xC6H","bB7Pu"], "bB7Pu", "parcelRequirea907")
 
-//# sourceMappingURL=index.7271efb6.js.map
+//# sourceMappingURL=index.3d214d75.js.map
