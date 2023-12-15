@@ -4,10 +4,9 @@
   "description": "Food Ordering Application for ordering food from different restaurants",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "jest",
+    "build": "parcel build index.html --out-dir dist",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
