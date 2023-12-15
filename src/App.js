@@ -49,7 +49,7 @@ const AppLayout = () => {
 // Configuration means some information that will define what will happen on the specific route
 // Outlet is basically a component provided by react-router-dom and this outlet will be filled/replaced with the children component according to the path of the element present in that children
 
-const appRouter = createBrowserRouter([
+export const appRouter = createBrowserRouter([
     {
         path: "/",
         element: <AppLayout />,
@@ -82,7 +82,7 @@ const appRouter = createBrowserRouter([
         ]
     },
 ])
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<AppLayout />); // Here we are rendering the app directly
-root.render(<RouterProvider router={appRouter} />)
+// root.render(<RouterProvider router={appRouter} />)
 

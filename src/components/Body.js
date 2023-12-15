@@ -23,7 +23,7 @@ const Body = () => {
     }, []); // will work on first render after rendering the component for the first time
     const fetchData = async () => {
         const data = await fetch(
-            "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
         ); // This will fetch data from the 
         // It will return a promise and we will wait for the promise to be resolved
         const json = await data.json();
